@@ -1,0 +1,113 @@
+<aside class="main-sidebar sidebar-dark-primary elevation-4">
+    <a href="{{route('dashboard')}}" class="brand-link">
+      <img src="{{ asset('public/front/assets/imgs/no-cheeni-logo.png')}}" alt="AdminLTE Logo" class="brand-image img-circle elevation-3" style="opacity: .8">
+      <span class="brand-text font-weight-light">nocheeni net</span>
+    </a>
+
+    <div class="sidebar">
+      <nav class="mt-2">
+        <ul class="nav nav-pills nav-sidebar flex-column" data-widget="treeview" role="menu" data-accordion="false">
+          <li class="nav-item menu-open">
+            <a href="{{route('dashboard')}}" class="nav-link @yield('dashboard')">
+              <i class="nav-icon fas fa-tachometer-alt"></i>
+              <p>
+                Dashboard
+                <i class="right fas fa-angle-left"></i>
+              </p>
+            </a>
+          </li>
+          <li class="nav-item menu-open mt-1">
+            <a href="{{route('user')}}" class="nav-link @yield('user')">
+              <i class="nav-icon fas fa-user"></i>
+              <p>
+                User Management
+              </p>
+            </a>
+          </li>
+
+          
+
+          <li class="nav-item menu-open">
+            <a href="{{route('product')}}" class="nav-link @yield('product')">
+              <i class="nav-icon fas fa-cart-plus"></i>
+              <p>
+                Product Management
+              </p>
+            </a>
+          </li>
+
+          <li class="nav-item menu-open mt-1">
+            <a href="{{route('cart')}}" class="nav-link @yield('cart')">
+              <i class="nav-icon fas fa-shopping-cart"></i>
+              <p>
+                Cart Management
+              </p>
+            </a>
+          </li>
+          
+          <li class="nav-item menu-open mt-1">
+            <a href="{{route('payment')}}" class="nav-link @yield('payment')">
+              <i class="nav-icon fas fa-rupee-sign"></i>
+              <p>
+                Payment Management
+              </p>
+            </a>
+          </li>
+
+          <li class="nav-item menu-open mt-1">
+            <a href="{{route('certificate')}}" class="nav-link @yield('dynamic')">
+              <i class="nav-icon fas fa-bookmark"></i>
+              <p>
+                Certificate 
+              </p>
+            </a>
+          </li>
+
+           <li class="nav-item menu-open mt-1">
+            <a href="{{route('testimonial')}}" class="nav-link @yield('dynamic')">
+              <i class="nav-icon fas fa-bookmark"></i>
+              <p>
+               Testimonial 
+              </p>
+            </a>
+          </li>
+          
+          
+          <li class="nav-item menu-open mt-1">
+            <a href="{{route('coupon')}}" class="nav-link @yield('coupon')">
+              <i class="nav-icon fas fa-gift"></i>
+              <p>
+                Coupon Management
+              </p>
+            </a>
+          </li>
+          <!-- hiranya@12_ -->
+          <li class="nav-item menu-open mt-1">
+            <a href="{{ route('change.password') }}" class="nav-link @yield('password')">
+            <i class="nav-icon fas fa-key"></i>
+              <p>
+                Change Password
+              </p>
+            </a>
+          </li>
+
+          <li class="nav-item menu-open mt-1">
+            <a href="{{ route('profile') }}" class="nav-link @yield('profile')">
+            <i class="nav-icon fas fa-cog"></i>
+              <p>
+              Account Settings
+              </p>
+            </a>
+          </li>
+
+
+          <li class="nav-item menu-open mt-1">
+            <a class="nav-link" href="{{ route('logout') }}">
+                <i class="nav-icon fas fa-sign-out-alt"> </i>
+                <p> logout</p>
+            </a>
+          </li>
+        </ul>
+      </nav>
+      </div>
+    </aside>
